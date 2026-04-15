@@ -1,0 +1,17 @@
+cat > .gitignore << 'EOF'
+# Kaggle credentials - NEVER commit this
+kaggle.json
+
+# Model files (large)
+*.keras
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data
+*.zip
+traffic_Data/
+EOF
